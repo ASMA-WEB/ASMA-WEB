@@ -20,7 +20,6 @@ const Login = () => {
       },
     });
 
-  console.log(errors);
 
       return (
         <>
