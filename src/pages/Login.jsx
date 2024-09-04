@@ -15,7 +15,7 @@ const Login = () => {
       validateOnBlur: true,
       onSubmit: (values, action) => {
         alert(JSON.stringify(values));
-        console.log("Login Form: ", values);
+        console.log("Login Form", values);
         action.resetForm();
       },
     });
