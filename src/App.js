@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import useRoutesHook from 'routes/routes';
+import React, { Suspense, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import useRoutesHook from "routes/routes";
 
 function App() {
   const routes = useRoutesHook();
@@ -11,13 +11,14 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className=''>
+    <div className="">
       <Suspense
         fallback={
-          <div className='loading'>
-            <div className='spinner'></div>
+          <div className="loading">
+            <div className="spinner"></div>
           </div>
-        }>
+        }
+      >
         {routes}
       </Suspense>
     </div>
